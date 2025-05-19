@@ -36,10 +36,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --neutral-1: var(--neutral);
-  --neutral-2: var(--neutral);
-  --accent: var(--accent);
-
+  --color-neutral-1: var(--neutral);
+  --color-neutral-2: var(--neutral);
+  --color-accent: var(--accent);
   --font-helvetica: 'helvitica', sans-serif;
   --font-montreal: 'montreal', sans-serif;
 }
