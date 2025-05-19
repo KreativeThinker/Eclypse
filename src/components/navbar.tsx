@@ -4,8 +4,8 @@ import Button from './button'
 
 export default function Navbar() {
   return (
-    <nav className="bg-background/60 sticky top-0 flex flex-row items-center px-4 py-8 backdrop-blur-lg">
-      <div className="h-full">
+    <nav className="bg-background/60 sticky top-0 z-50 flex flex-row items-center px-4 py-8 backdrop-blur-xl">
+      <div>
         <a href="/">
           <img src="/assets/logo.jpg" className="h-10" />
         </a>
