@@ -11,15 +11,9 @@ export default function Navbar() {
         </a>
       </div>
       <div className="mt-auto mb-auto flex w-full flex-row items-center justify-end gap-8">
-        <a href="/about" className="font-thin">
-          About Us
-        </a>
-        <a href="/services" className="font-normal">
-          Waitlist
-        </a>
-        <a href="/contact" className="font-bold">
-          Cart
-        </a>
+        <a href="/about">About Us</a>
+        <a href="/services">Waitlist</a>
+        <a href="/contact">Cart</a>
         <Button>Buy</Button>
       </div>
     </nav>
