@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import copyright from '../../public/copyright.svg'
+import arrow from '../../public/arrow.svg'
 
 export default function Home() {
   return (
-    <div className="px-4 py-8">
+    <div className="px-4">
       {/* Hero Heading */}
-      <section className="flex w-full flex-row items-end justify-between">
+      <section className="mt-16 flex w-full flex-row items-end justify-between">
         <h1 className="text-3xl">
           Eclypse
           <span className="align-super text-xs">®</span>
@@ -31,6 +32,19 @@ export default function Home() {
         <p className="font-helvetica font-lg text-foreground absolute right-4 bottom-4 tracking-wide">
           A silhouette worth remembering
         </p>
+      </section>
+
+      {/* Description */}
+      <section className="mt-24 flex w-full flex-col">
+        <h2 className="w-3/4 text-lg">
+          Rooted in a philosophy of quiet luxury, our garments are designed to speak softly in cut,
+          in movement, in presence.
+        </h2>
+
+        <button className="font-helvetica mt-8 flex flex-row items-center text-lg">
+          Learn more about Eclypse
+          <Image src={arrow} alt="arrow-45deg" />
+        </button>
       </section>
     </div>
   )
