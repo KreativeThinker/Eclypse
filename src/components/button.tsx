@@ -1,15 +1,21 @@
 type ButtonProps = {
   children: React.ReactNode
   onClick?: () => void
-  variant?: 'primary' | 'secondary'
+  variant?: 'filled' | 'outline'
+  theme?: 'light' | 'dark'
 }
-const Button: React.FC<ButtonProps> = ({ children, onClick, variant = 'primary' }) => {
-  const variantStyle =
-    variant === 'primary'
-      ? 'bg-foreground text-background'
-      : 'bg-background text-foreground border border-background'
+const Button: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  variant = 'filled',
+  theme = 'light',
+}) => {
+  const themeStyle =
+    theme === 'light' ? 'bg-foreground text-background' : 'bg-background text-foreground'
+
+  const variantStyle = variant === 'filled' ? themeStyle : 'border-2 border-accent'
   const hoverStyle =
-    variant === 'primary'
+    variant === 'filled'
       ? 'hover:bg-accent hover:text-foreground'
       : 'hover:bg-foreground hover:text-background'
   return (
