@@ -8,8 +8,15 @@
 
 @font-face {
   font-family: 'helvitica';
+  src: url('/fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvitica';
   src: url('/fonts/HelveticaNeue-Bold.ttf') format('truetype');
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -41,8 +48,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-helvetica);
+  font-size: 12px;
 }
 
 h1 h2 h3 h4 h5 h6 {
   font-family: var(--font-montreal);
+}
+
+a {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
 }
