@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'helvitica';
-  src: url('/fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  src: url('/fonts/HelveticaNeue-Thin.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
 }
@@ -22,6 +22,14 @@
 @font-face {
   font-family: 'montreal';
   src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montreal';
+  src: url('/fonts/NeueMontreal-Light.otf') format('opentype');
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -50,11 +58,15 @@ body {
   font-size: 12px;
 }
 
-h1 h2 h3 h4 h5 h6 {
-  font-family: var(--font-montreal);
-}
-
 a {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montreal);
 }
