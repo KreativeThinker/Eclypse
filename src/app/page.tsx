@@ -2,6 +2,8 @@ import Image from 'next/image'
 import copyright from '../../public/copyright.svg'
 import arrow from '../../public/arrow.svg'
 import Card from '@/components/card'
+import SizeSelector from '@/components/sizeSelector'
+import Button from '@/components/button'
 
 export default function Home() {
   return (
@@ -78,8 +80,48 @@ export default function Home() {
           overlayText="Hand-cut and assembled in small batches"
         />
       </section>
+
       {/* silhouette no 1 */}
       <h2 className="my-8 text-3xl">Silhouette No. 1 – Vermilion</h2>
+
+      {/* Product View */}
+      <section className="bg-foreground text-background flex flex-col gap-4 pb-12">
+        <div className="aspect-video w-full">
+          <video className="h-full w-full object-cover" autoPlay loop muted>
+            <source src="/assets/video-3.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div className="flex flex-col gap-8 px-4">
+          <p className="hidden">
+            A tailored composition in motion. Cut from structured wool with a sculpted shoulder and
+            softened hem, this piece captures presence without force. Worn here in the stillness of
+            a city in motion.
+          </p>
+          <div className="flex w-full flex-row items-center justify-between gap-4">
+            {['product-back', 'product-side', 'product-back-long'].map((img, i) => (
+              <div key={i} className="relative aspect-square w-full">
+                <Image src={`/assets/${img}.png`} alt={img} fill className="object-cover" />
+              </div>
+            ))}
+          </div>
+          <hr className="text-neutral-3" />
+          <div className="flex flex-row items-baseline gap-4">
+            <h2 className="text-3xl font-semibold">₹ 7,999</h2>
+            <p className="text-sm text-neutral-500">MRP incl. of all taxes</p>
+          </div>
+
+          <SizeSelector />
+          <div className="flex flex-col gap-4">
+            <Button variant="filled" theme="dark">
+              Buy
+            </Button>
+            <Button variant="outline" theme="dark">
+              Add to Cart
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
