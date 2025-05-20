@@ -40,9 +40,10 @@ export default function Home() {
           Rooted in a philosophy of quiet luxury, our garments are designed to speak softly in cut,
           in movement, in presence.
         </h2>
-
-        <button className="font-helvetica mt-8 flex flex-row items-center text-lg">
-          Learn more about Eclypse
+        <button className="group font-helvetica hover:text-background mt-8 flex w-fit items-center gap-2 border-b border-[#e3e3e3] text-xs transition-colors hover:bg-[#e3e3e3]">
+          <span className="transition-transform group-hover:mx-auto group-hover:translate-x-5">
+            Learn more about Eclypse
+          </span>
           <Image src={arrow} alt="arrow-45deg" />
         </button>
       </section>
