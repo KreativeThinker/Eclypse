@@ -10,7 +10,7 @@ import TestimonialSlider from '@/components/testimonials'
 export default function Home() {
   return (
     <div className="px-4 py-2">
-      {/* Hero Heading */}
+      {/* Hero Screeb */}
       <section className="mt-10 flex w-full flex-row items-end justify-between">
         <h1 className="text-5xl">
           Eclypse
@@ -22,7 +22,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video */}
       <section className="relative mt-4 w-full overflow-hidden">
         <video className="h-full w-full rounded-sm object-cover" autoPlay loop muted>
           <source src="/assets/video-1.mp4" type="video/mp4" />
@@ -39,7 +38,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Description */}
+      {/* Sub header, brand info */}
       <section className="mt-24 flex w-full flex-col">
         <h2 className="w-3/4 text-lg">
           Rooted in a philosophy of quiet luxury, our garments are designed to speak softly in cut,
@@ -53,7 +52,7 @@ export default function Home() {
         </button>
       </section>
 
-      {/* Mosaic */}
+      {/* Brand Overview */}
       <section className="mt-10 grid w-full grid-cols-3 gap-4">
         <video
           className="col-span-3 aspect-video h-full rounded-sm object-cover md:col-span-2"
@@ -83,10 +82,8 @@ export default function Home() {
         />
       </section>
 
-      {/* silhouette no 1 */}
+      {/* Product Shop */}
       <h2 className="my-8 text-3xl">Silhouette No. 1 – Vermilion</h2>
-
-      {/* Product View */}
       <section className="bg-foreground text-background flex flex-col gap-4 pb-12">
         <div className="aspect-video w-full">
           <video className="h-full w-full object-cover" autoPlay loop muted>
@@ -125,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQs */}
+      {/* Product Info */}
       <section className="mt-10 flex w-full flex-col gap-4">
         <div className="flex flex-col gap-4">
           <FAQ question="Size & Fit" />
@@ -134,7 +131,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Reviews */}
       <section className="my-10 flex w-full flex-col gap-4">
         <TestimonialSlider />
       </section>
