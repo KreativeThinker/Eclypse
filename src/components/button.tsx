@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   const themeStyle =
     theme === 'light' ? 'bg-foreground text-background' : 'bg-background text-foreground'
 
-  const variantStyle = variant === 'filled' ? themeStyle : 'border-2 border-accent'
+  const variantStyle = variant === 'filled' ? themeStyle : 'border-2 border-neutral-3'
   const hoverStyle =
     variant === 'filled'
       ? 'hover:bg-accent hover:text-foreground'
