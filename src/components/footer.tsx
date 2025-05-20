@@ -21,11 +21,12 @@ export default function Footer() {
           <span className="text-neutral-1 ml-1 align-super text-xs">↗</span>
         </h3>
       </Link>
-      <button className="bg-foreground mr-0 ml-auto aspect-square h-6 rounded-full">
-        <Image src={arrow} alt="go-to-top" className="h-4 w-4 rounded-full invert" fill />
+      <button className="bg-foreground relative mr-0 ml-auto aspect-square h-8 rounded-full">
+        <Image src={arrow} alt="go-to-top" className="-rotate-45 rounded-full invert" fill />
       </button>
+
       {/* Left side */}
-      <div className="col-span-2 row-span-2 mt-10 flex flex-col">
+      <div className="col-span-2 row-span-2 mt-10 flex flex-col lg:col-span-1">
         <nav className="text-foreground font-montreal flex flex-wrap gap-3">
           {Object.entries(links).map(([name, href], i, arr) => (
             <Link
@@ -42,7 +43,7 @@ export default function Footer() {
       </div>
 
       {/* Right side */}
-      <div className="col-span-3">
+      <div className="col-span-3 lg:col-span-4">
         <p className="text-neutral-2 mb-1 text-xs tracking-widest uppercase">Contact</p>
         <p className="text-lg font-semibold">+91 123-456-7890</p>
       </div>
@@ -53,7 +54,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom row */}
-      <div className="mt-12 flex items-center justify-between text-xs text-gray-500">
+      <div className="text-neutral-1 col-span-2 mt-auto ml-auto text-xs lg:col-span-3">
         <p>© Eclypse 2025</p>
       </div>
     </footer>
