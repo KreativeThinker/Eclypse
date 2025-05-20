@@ -47,6 +47,36 @@ export default function Home() {
           <Image src={arrow} alt="arrow-45deg" />
         </button>
       </section>
+
+      {/* Mosaic */}
+      <section className="mt-10 grid w-full grid-cols-3 gap-4">
+        <video
+          className="col-span-3 aspect-video h-full rounded-sm object-cover"
+          autoPlay
+          loop
+          muted
+        >
+          <source src="/assets/video-2.mp4" type="video/mp4" />
+        </video>
+
+        <img
+          src="/assets/cloth-1.jpg"
+          alt="cloth"
+          className="aspect-square h-full w-full rounded-sm object-cover"
+        />
+
+        <img
+          src="/assets/hand-in-pocket.jpg"
+          alt="hand in pocket"
+          className="aspect-square h-full w-full rounded-sm object-cover"
+        />
+
+        <img
+          src="/assets/cutting-fabric.jpg"
+          alt="cutting fabric"
+          className="aspect-square h-full w-full rounded-sm object-cover"
+        />
+      </section>
     </div>
   )
 }
