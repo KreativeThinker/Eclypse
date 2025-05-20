@@ -85,6 +85,21 @@ export default function Home() {
           alt="cutting fabric"
           overlayText="Hand-cut and assembled in small batches"
         />
+
+        <div className="group relative hidden md:flex">
+          <Image
+            src="/assets/logo.jpg"
+            alt="logo"
+            className="object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+            fill
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <h1 className="text-center text-5xl md:text-8xl">
+              Eclypse
+              <span className="align-super text-xs md:text-4xl">®</span>
+            </h1>
+          </div>
+        </div>
       </section>
 
       {/* Product Shop */}
