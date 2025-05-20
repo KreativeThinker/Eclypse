@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import copyright from '../../public/copyright.svg'
 import arrow from '../../public/arrow.svg'
+import Card from '@/components/card'
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
       {/* Mosaic */}
       <section className="mt-10 grid w-full grid-cols-3 gap-4">
         <video
-          className="col-span-3 aspect-video h-full rounded-sm object-cover"
+          className="col-span-3 aspect-video h-full rounded-sm object-cover md:col-span-2"
           autoPlay
           loop
           muted
@@ -59,22 +60,22 @@ export default function Home() {
           <source src="/assets/video-2.mp4" type="video/mp4" />
         </video>
 
-        <img
-          src="/assets/cloth-1.jpg"
+        <Card
+          imageSrc="/assets/cloth-1.jpg"
           alt="cloth"
-          className="aspect-square h-full w-full rounded-sm object-cover"
+          overlayText="Premium wool blend in signature vermilion"
         />
 
-        <img
-          src="/assets/hand-in-pocket.jpg"
+        <Card
+          imageSrc="/assets/hand-in-pocket.jpg"
           alt="hand in pocket"
-          className="aspect-square h-full w-full rounded-sm object-cover"
+          overlayText="Discreet side pockets with clean finish"
         />
 
-        <img
-          src="/assets/cutting-fabric.jpg"
+        <Card
+          imageSrc="/assets/cutting-fabric.jpg"
           alt="cutting fabric"
-          className="aspect-square h-full w-full rounded-sm object-cover"
+          overlayText="Hand-cut and assembled in small batches"
         />
       </section>
     </div>
