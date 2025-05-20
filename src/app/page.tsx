@@ -9,16 +9,16 @@ import TestimonialSlider from '@/components/testimonials'
 
 export default function Home() {
   return (
-    <div className="px-4 py-2">
-      {/* Hero Screeb */}
+    <div className="px-4 md:px-8">
+      {/* Hero Screen */}
       <section className="mt-10 flex w-full flex-row items-end justify-between">
-        <h1 className="text-5xl">
+        <h1 className="text-5xl md:text-8xl">
           Eclypse
-          <span className="align-super text-xs">®</span>
+          <span className="align-super text-xs md:text-4xl">®</span>
         </h1>
         <div className="flex flex-row items-center gap-1">
           <Image src={copyright} alt="Copyright" className="h-2 w-2" />
-          <p className="text-[0.25rem]">2025</p>
+          <p className="text-xs md:text-base">2025</p>
         </div>
       </section>
 
