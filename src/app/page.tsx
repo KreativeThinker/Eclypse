@@ -122,6 +122,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQs */}
+      <section className="mt-10 flex w-full flex-col gap-4">
+        <div className="flex flex-col gap-4">
+          <FAQ question="Size & Fit" />
+          <FAQ question="Delivery & Returns" />
+          <FAQ question="How This Was Made" />
+        </div>
+      </section>
     </div>
   )
 }
