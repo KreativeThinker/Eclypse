@@ -8,7 +8,7 @@ export default function SizeSelector() {
   const [selectedSize, setSelectedSize] = useState<string | null>(null)
 
   return (
-    <div className="flex flex-col gap-4 rounded-md p-4">
+    <div className="flex flex-col gap-4 rounded-md">
       <div className="flex items-center justify-between text-sm font-medium text-neutral-500">
         <span>Please select a size</span>
         <a href="#" className="underline hover:text-black">
