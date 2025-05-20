@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="px-4 md:px-8">
       {/* Hero Screen */}
-      <section className="mt-10 flex w-full flex-row items-end justify-between">
+      <section className="mt-20 flex w-full flex-row items-end justify-between">
         <h1 className="text-5xl md:text-8xl">
           Eclypse
           <span className="align-super text-xs md:text-4xl">®</span>
@@ -22,8 +22,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mt-4 w-full overflow-hidden">
-        <video className="h-full w-full rounded-sm object-cover" autoPlay loop muted>
+      <section className="relative mt-8 w-full overflow-hidden">
+        <video className="w-full rounded-sm object-cover md:max-h-[70vh]" autoPlay loop muted>
           <source src="/assets/video-1.mp4" type="video/mp4" />
         </video>
         <div
@@ -33,7 +33,7 @@ export default function Home() {
               'linear-gradient(139.06deg, rgba(0, 0, 0, 0) 38.24%, rgba(0, 0, 0, 0.46) 85.61%)',
           }}
         />
-        <p className="font-helvetica text-foreground absolute right-4 bottom-4 text-xs tracking-wide">
+        <p className="font-helvetica text-foreground absolute right-4 bottom-4 text-xs tracking-wide sm:text-lg md:text-2xl lg:text-4xl">
           A silhouette worth remembering
         </p>
       </section>
