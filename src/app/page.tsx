@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Product Shop */}
-      <h2 className="my-8 text-3xl">Silhouette No. 1 – Vermilion</h2>
+      <h2 className="my-8 text-3xl md:my-24 md:text-5xl">Silhouette No. 1 – Vermilion</h2>
       <section className="bg-foreground text-background flex flex-col gap-4 pb-12">
         <div className="aspect-video w-full">
           <video className="h-full w-full object-cover" autoPlay loop muted>
