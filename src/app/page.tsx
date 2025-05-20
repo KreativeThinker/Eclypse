@@ -135,9 +135,11 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="mt-10 flex w-full flex-col gap-4">
+      <section className="my-10 flex w-full flex-col gap-4">
         <TestimonialSlider />
       </section>
+
+      <hr className="text-neutral-4" />
     </div>
   )
 }
