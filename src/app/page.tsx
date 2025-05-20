@@ -78,6 +78,8 @@ export default function Home() {
           overlayText="Hand-cut and assembled in small batches"
         />
       </section>
+      {/* silhouette no 1 */}
+      <h2 className="my-8 text-3xl">Silhouette No. 1 – Vermilion</h2>
     </div>
   )
 }
