@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
       : 'hover:bg-foreground hover:text-background'
   return (
     <button
-      className={`${variantStyle} ${hoverStyle} rounded-md px-6 py-2 transition-all duration-200 ease-in-out`}
+      className={`${variantStyle} ${hoverStyle} rounded-md px-4 py-2 transition-all duration-200 ease-in-out md:px-8`}
       onClick={onClick}
     >
       {children}
