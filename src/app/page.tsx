@@ -4,6 +4,8 @@ import arrow from '../../public/arrow.svg'
 import Card from '@/components/card'
 import SizeSelector from '@/components/sizeSelector'
 import Button from '@/components/button'
+import FAQ from '@/components/faq'
+import TestimonialSlider from '@/components/testimonials'
 
 export default function Home() {
   return (
@@ -130,6 +132,11 @@ export default function Home() {
           <FAQ question="Delivery & Returns" />
           <FAQ question="How This Was Made" />
         </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="mt-10 flex w-full flex-col gap-4">
+        <TestimonialSlider />
       </section>
     </div>
   )
