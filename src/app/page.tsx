@@ -23,7 +23,12 @@ export default function Home() {
       </section>
 
       <section className="relative mt-8 w-full overflow-hidden">
-        <video className="w-full rounded-sm object-cover md:max-h-[70vh]" autoPlay loop muted>
+        <video
+          className="w-full rounded-sm object-cover md:max-h-[70vh] lg:rounded-md"
+          autoPlay
+          loop
+          muted
+        >
           <source src="/assets/video-1.mp4" type="video/mp4" />
         </video>
         <div
@@ -40,11 +45,11 @@ export default function Home() {
 
       {/* Sub header, brand info */}
       <section className="mt-24 flex w-full flex-col">
-        <h2 className="w-3/4 text-lg">
+        <h2 className="w-[60%] text-lg md:text-2xl lg:text-5xl">
           Rooted in a philosophy of quiet luxury, our garments are designed to speak softly in cut,
           in movement, in presence.
         </h2>
-        <button className="group font-helvetica hover:text-background mt-8 flex w-fit items-center gap-2 border-b border-[#e3e3e3] text-xs transition-colors hover:bg-[#e3e3e3]">
+        <button className="group font-helvetica hover:text-background lg:5xl mt-8 flex w-fit items-center gap-2 border-b border-[#e3e3e3] text-xs transition-colors hover:bg-[#e3e3e3] sm:text-base md:mt-12 md:p-2 md:text-2xl">
           <span className="transition-transform group-hover:mx-auto group-hover:translate-x-5">
             Learn more about Eclypse
           </span>
@@ -55,7 +60,7 @@ export default function Home() {
       {/* Brand Overview */}
       <section className="mt-10 grid w-full grid-cols-3 gap-4">
         <video
-          className="col-span-3 aspect-video h-full rounded-sm object-cover md:col-span-2"
+          className="col-span-3 aspect-video h-full rounded-sm object-cover md:col-span-2 lg:rounded-md"
           autoPlay
           loop
           muted
