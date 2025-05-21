@@ -9,7 +9,7 @@ type FAQProps = {
 export default function FAQ({ question, answer }: FAQProps) {
   return (
     <div className="border-neutral-4 flex flex-row items-center justify-between border-b py-4">
-      <h3 className="text-lg font-semibold">{question}</h3>
+      <h3 className="text-lg font-semibold md:text-3xl">{question}</h3>
       <Image src={arrow} alt="arrow" className="rotate-135" />
     </div>
   )
