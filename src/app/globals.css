@@ -28,22 +28,28 @@
 
 :root {
   --background: #070707;
+  --background-2: #f0f0f0;
   --foreground: #ffffff;
   --neutral-1: #575757;
   --neutral-2: #767676;
   --neutral-3: #d9d9d9;
   --neutral-4: #3d3d3d;
+  --neutral-5: #c3c3c3;
+  --input-border: #c8c8c8;
   --accent: #f63030;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-2: var(--background-2);
   --color-foreground: var(--foreground);
   --color-neutral-1: var(--neutral-1);
   --color-neutral-2: var(--neutral-2);
   --color-neutral-3: var(--neutral-3);
   --color-neutral-4: var(--neutral-4);
+  --color-neutral-5: var(--neutral-5);
   --color-accent: var(--accent);
+  --color-input-border: var(--input-border);
   --font-helvetica: 'helvitica', sans-serif;
   --font-montreal: 'montreal', sans-serif;
 }
