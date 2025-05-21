@@ -28,22 +28,26 @@ export default function TestimonialSlider() {
 
   return (
     <section className="bg-background text-foreground">
-      <p className="mb-8 text-xs tracking-widest uppercase">Our Customers</p>
+      <p className="text-neutral-2 mb-8 text-xs tracking-widest uppercase md:text-lg">
+        Our Customers
+      </p>
 
       <div className="flex flex-row items-center gap-8">
         <div className="flex-1">
           <div className="mb-6 flex flex-row">
-            <span className="mr-2 align-sub text-4xl">“</span>
-            <div className="font-montreal text-sm">
-              <h4 className="text-2xl">{testimonials[active].text}</h4>
-              <p className="text-foreground font-montreal mt-4">{testimonials[active].name}</p>
+            <span className="mr-2 align-sub text-4xl md:text-9xl">“</span>
+            <div className="font-montreal text-neutral-3 max-w-3/4 text-sm md:max-w-[60%]">
+              <h4 className="text-2xl md:text-5xl">{testimonials[active].text}</h4>
+              <p className="text-neutral-3 font-montreal mt-4 md:mt-24 md:text-xl">
+                {testimonials[active].name}
+              </p>
               <p className="text-neutral-1 font-montreal">{testimonials[active].location}</p>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col items-center gap-4">
-          <div className="relative h-16 w-16">
+          <div className="relative h-16 w-16 md:h-30 md:w-30">
             <Image
               src={testimonials[active].avatar}
               alt="avatar"
@@ -52,7 +56,10 @@ export default function TestimonialSlider() {
             />
           </div>
           {testimonials.slice(1).map((t, i) => (
-            <div key={i} className="relative h-12 w-12 overflow-hidden rounded-full opacity-30">
+            <div
+              key={i}
+              className="relative h-12 w-12 overflow-hidden rounded-full opacity-30 md:h-16 md:w-16"
+            >
               <Image src={t.avatar} alt="avatar" className="rounded-full object-cover" fill />
             </div>
           ))}

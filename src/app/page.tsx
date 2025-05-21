@@ -157,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section className="my-10 flex w-full flex-col gap-4">
+      <section className="my-10 flex w-full flex-col gap-4 md:my-36">
         <TestimonialSlider />
       </section>
 
