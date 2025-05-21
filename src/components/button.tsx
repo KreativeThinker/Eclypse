@@ -3,12 +3,14 @@ type ButtonProps = {
   onClick?: () => void
   variant?: 'filled' | 'outline'
   theme?: 'light' | 'dark'
+  className?: string
 }
 const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   variant = 'filled',
   theme = 'light',
+  className,
 }) => {
   const themeStyle =
     theme === 'light' ? 'bg-foreground text-background' : 'bg-background text-foreground'
@@ -20,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
       : 'hover:bg-foreground hover:text-background'
   return (
     <button
-      className={`${variantStyle} ${hoverStyle} rounded-md px-4 py-2 transition-all duration-200 ease-in-out md:px-8`}
+      className={`${variantStyle} ${hoverStyle} rounded-md px-4 py-2 transition-all duration-200 ease-in-out md:px-8 ${className}`}
       onClick={onClick}
     >
       {children}
