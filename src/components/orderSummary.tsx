@@ -2,7 +2,7 @@ import Button from './button'
 
 export default function OrderSummary() {
   return (
-    <div className="bg-background-2 mt-4 space-y-4 rounded-md p-4">
+    <div className="bg-background-2 mt-4 flex flex-1 flex-col space-y-4 rounded-md p-4 md:mt-0 md:h-full md:justify-between">
       <p className="text-neutral-1 text-sm">
         By placing your order, you agree to our company{' '}
         <span className="font-medium text-black underline">Privacy policy</span> and{' '}
