@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Eclypse - Demo',
@@ -15,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
