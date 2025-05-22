@@ -1,6 +1,6 @@
 'use client'
-import Image from 'next/image'
 import Link from 'next/link'
+import Icon from '@/components/ui/icon'
 
 export default function Footer() {
   const links = {
@@ -20,7 +20,11 @@ export default function Footer() {
         </h3>
       </Link>
       <button className="bg-foreground relative mr-0 ml-auto aspect-square h-8 rounded-full">
-        <Image src="/arrow.svg" alt="go-to-top" className="-rotate-45 rounded-full invert" fill />
+        <Icon
+          icon="arrow"
+          alt="go-to-top"
+          className="h-full w-full -rotate-45 rounded-full invert"
+        />
       </button>
 
       {/* Left side */}

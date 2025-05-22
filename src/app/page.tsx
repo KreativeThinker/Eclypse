@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import copyright from '../../public/copyright.svg'
-import arrow from '../../public/arrow.svg'
 import Card from '@/components/ui/card'
 import SizeSelector from '@/components/shop/sizeSelector'
 import Button from '@/components/ui/button'
@@ -8,6 +6,7 @@ import FAQ from '@/components/faq'
 import TestimonialSlider from '@/components/testimonials'
 import Navbar from '@/components/layout/navbar'
 import Footer from '@/components/layout/footer'
+import Icon from '@/components/ui/icon'
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
             <span className="align-super text-xs md:text-4xl">®</span>
           </h1>
           <div className="flex flex-row items-center gap-1">
-            <Image src={copyright} alt="Copyright" className="h-2 w-2" />
+            <Icon icon="copyright" alt="Copyright" className="h-2 w-2" />
             <p className="text-xs md:text-base">2025</p>
           </div>
         </section>
@@ -33,7 +32,7 @@ export default function Home() {
             loop
             muted
           >
-            <source src="/assets/video-1.mp4" type="video/mp4" />
+            <source src="/media/videos/video-1.mp4" type="video/mp4" />
           </video>
           <div
             className="absolute inset-0"
@@ -57,7 +56,7 @@ export default function Home() {
             <span className="transition-transform group-hover:mx-auto group-hover:translate-x-5">
               Learn more about Eclypse
             </span>
-            <Image src={arrow} alt="arrow-45deg" />
+            <Icon icon="arrow" alt="arrow" className="md:h-8 md:w-8" />
           </button>
         </section>
 
@@ -69,30 +68,30 @@ export default function Home() {
             loop
             muted
           >
-            <source src="/assets/video-2.mp4" type="video/mp4" />
+            <source src="/media/videos/video-2.mp4" type="video/mp4" />
           </video>
 
           <Card
-            imageSrc="/assets/cloth-1.jpg"
+            imageSrc="/media/images/cloth-1.jpg"
             alt="cloth"
             overlayText="Premium wool blend in signature vermilion"
           />
 
           <Card
-            imageSrc="/assets/hand-in-pocket.jpg"
+            imageSrc="/media/images/hand-in-pocket.jpg"
             alt="hand in pocket"
             overlayText="Discreet side pockets with clean finish"
           />
 
           <Card
-            imageSrc="/assets/cutting-fabric.jpg"
+            imageSrc="/media/images/cutting-fabric.jpg"
             alt="cutting fabric"
             overlayText="Hand-cut and assembled in small batches"
           />
 
           <div className="group relative hidden md:flex">
             <Image
-              src="/assets/logo.jpg"
+              src="/logo.jpg"
               alt="logo"
               className="object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
               fill
@@ -112,7 +111,7 @@ export default function Home() {
         <section className="bg-foreground text-background flex flex-col gap-4 lg:flex-row lg:gap-8">
           <div className="aspect-video w-full lg:aspect-[3/4] lg:w-1/2">
             <video className="h-full w-full object-cover" autoPlay loop muted>
-              <source src="/assets/video-3.mp4" type="video/mp4" />
+              <source src="/media/videos/video-3.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -126,7 +125,7 @@ export default function Home() {
             <div className="flex w-full flex-row items-center justify-between gap-4">
               {['product-back', 'product-side', 'product-back-long'].map((img, i) => (
                 <div key={i} className="relative aspect-square w-full">
-                  <Image src={`/assets/${img}.png`} alt={img} fill className="object-cover" />
+                  <Image src={`/media/images/${img}.png`} alt={img} fill className="object-cover" />
                 </div>
               ))}
             </div>
