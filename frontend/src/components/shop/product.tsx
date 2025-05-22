@@ -72,10 +72,10 @@ export default function ProductCard() {
           setSelectedSize={setSelectedSize}
         />
         <div className="flex flex-col gap-4">
-          <Button variant="filled" theme="dark">
+          <Button variant="filled" theme="dark" className="md:p-4">
             Buy
           </Button>
-          <Button variant="outline" theme="dark">
+          <Button variant="outline" theme="dark" className="md:p-4">
             Add to Cart
           </Button>
         </div>
