@@ -17,9 +17,9 @@ importers:
       express:
         specifier: ^5.1.0
         version: 5.1.0
-      tsc:
-        specifier: ^2.0.4
-        version: 2.0.4
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
     devDependencies:
       '@types/cors':
         specifier: ^2.8.18
@@ -493,10 +493,6 @@ packages:
         optional: true
       '@swc/wasm':
         optional: true
-
-  tsc@2.0.4:
-    resolution: {integrity: sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==}
-    hasBin: true
 
   type-is@2.0.1:
     resolution: {integrity: sha512-OZs6gsjF4vMp32qrCbiVSkrFmXtG/AZhY3t0iAMrMBiAZyV9oALtXO8hsrHbMXF9x6L3grlFuwW2oAz7cav+Gw==}
@@ -1030,8 +1026,6 @@ snapshots:
       typescript: 5.8.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
-
-  tsc@2.0.4: {}
 
   type-is@2.0.1:
     dependencies:
