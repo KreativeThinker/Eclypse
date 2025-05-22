@@ -27,10 +27,9 @@ const productData: Product = {
 
 export default function ProductCard() {
   const router = useRouter()
-  const [product, setProduct] = useState<Product | null>(productData)
+  const [product, setProduct] = useState<Product>(productData)
   const [selectedSize, setSelectedSize] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
 
   const handleSizeSelect = (size: string | null) => {
     setSelectedSize(size)
@@ -60,7 +59,6 @@ export default function ProductCard() {
       } catch (error) {
         console.error('Error fetching product:', error)
         setProduct(productData)
-        // setError('Failed to load product')
       } finally {
         setIsLoading(false)
       }
@@ -71,10 +69,6 @@ export default function ProductCard() {
 
   if (isLoading) {
     return <div className="p-8">Loading...</div>
-  }
-
-  if (error || !product) {
-    return <div className="p-8">Error loading product</div>
   }
 
   return (
