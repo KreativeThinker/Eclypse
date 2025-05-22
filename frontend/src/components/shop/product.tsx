@@ -8,9 +8,26 @@ import Button from '@/components/ui/button'
 import { Product, SelectedProduct } from '@shared/types'
 import BASE_URL from '@/utils/api'
 
+const productData: Product = {
+  id: 'S1',
+  name: 'Silhouette No. 1 - Vermillion',
+  price: 7999,
+  sizes: ['XS', 'S', 'M', 'L', 'XL'],
+  media: {
+    video: '/media/videos/video-3.mp4',
+    images: [
+      '/media/images/product-side.png',
+      '/media/images/product-back.png',
+      '/media/images/product-back-long.png',
+    ],
+  },
+  description:
+    'A tailored composition in motion. Cut from structured wool with a sculpted shoulder and softened hem, this piece captures presence without force. Worn here in the stillness of a city in motion.',
+}
+
 export default function ProductCard() {
   const router = useRouter()
-  const [product, setProduct] = useState<Product | null>(null)
+  const [product, setProduct] = useState<Product | null>(productData)
   const [selectedSize, setSelectedSize] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
