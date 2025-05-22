@@ -59,7 +59,8 @@ export default function ProductCard() {
         setProduct(data)
       } catch (error) {
         console.error('Error fetching product:', error)
-        setError('Failed to load product')
+        setProduct(productData)
+        // setError('Failed to load product')
       } finally {
         setIsLoading(false)
       }
