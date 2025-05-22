@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import Card from '@/components/ui/card'
-import SizeSelector from '@/components/shop/sizeSelector'
-import Button from '@/components/ui/button'
 import FAQ from '@/components/faq'
 import TestimonialSlider from '@/components/testimonials'
 import Navbar from '@/components/layout/navbar'
 import Footer from '@/components/layout/footer'
 import Icon from '@/components/ui/icon'
+import ProductCard from '@/components/shop/product'
 
 export default function Home() {
   return (
@@ -107,48 +106,7 @@ export default function Home() {
 
         {/* Product Shop */}
         <h2 className="my-8 text-3xl md:my-24 md:text-5xl">Silhouette No. 1 – Vermilion</h2>
-
-        <section className="bg-foreground text-background flex flex-col gap-4 lg:flex-row lg:gap-8">
-          <div className="aspect-video w-full lg:aspect-[3/4] lg:w-1/2">
-            <video className="h-full w-full object-cover" autoPlay loop muted>
-              <source src="/media/videos/video-3.mp4" type="video/mp4" />
-            </video>
-          </div>
-
-          <div className="flex flex-col gap-8 px-4 py-4 md:px-8 md:py-8 lg:w-1/2 lg:justify-between">
-            <p className="hidden md:flex">
-              A tailored composition in motion. Cut from structured wool with a sculpted shoulder
-              and softened hem, this piece captures presence without force. Worn here in the
-              stillness of a city in motion.
-            </p>
-
-            <div className="flex w-full flex-row items-center justify-between gap-4">
-              {['product-back', 'product-side', 'product-back-long'].map((img, i) => (
-                <div key={i} className="relative aspect-square w-full">
-                  <Image src={`/media/images/${img}.png`} alt={img} fill className="object-cover" />
-                </div>
-              ))}
-            </div>
-
-            <hr className="text-neutral-3" />
-
-            <div className="flex flex-row items-baseline gap-4">
-              <h2 className="text-3xl font-semibold">₹ 7,999</h2>
-              <p className="text-sm text-neutral-500">MRP incl. of all taxes</p>
-            </div>
-
-            <SizeSelector />
-
-            <div className="flex flex-col gap-4">
-              <Button variant="filled" theme="dark">
-                Buy
-              </Button>
-              <Button variant="outline" theme="dark">
-                Add to Cart
-              </Button>
-            </div>
-          </div>
-        </section>
+        <ProductCard />
 
         {/* Product Info */}
         <section className="mt-10 flex w-full flex-col gap-4">
