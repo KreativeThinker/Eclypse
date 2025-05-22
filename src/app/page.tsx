@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import copyright from '../../public/copyright.svg'
 import arrow from '../../public/arrow.svg'
-import Card from '@/components/card'
-import SizeSelector from '@/components/sizeSelector'
-import Button from '@/components/button'
+import Card from '@/components/ui/card'
+import SizeSelector from '@/components/shop/sizeSelector'
+import Button from '@/components/ui/button'
 import FAQ from '@/components/faq'
 import TestimonialSlider from '@/components/testimonials'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
+import Navbar from '@/components/layout/navbar'
+import Footer from '@/components/layout/footer'
 
 export default function Home() {
   return (

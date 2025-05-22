@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import arrow from '../../public/arrow.svg'
-
 export default function Footer() {
   const links = {
     Home: '/',
@@ -22,7 +20,7 @@ export default function Footer() {
         </h3>
       </Link>
       <button className="bg-foreground relative mr-0 ml-auto aspect-square h-8 rounded-full">
-        <Image src={arrow} alt="go-to-top" className="-rotate-45 rounded-full invert" fill />
+        <Image src="/arrow.svg" alt="go-to-top" className="-rotate-45 rounded-full invert" fill />
       </button>
 
       {/* Left side */}

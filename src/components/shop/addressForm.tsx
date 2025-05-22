@@ -1,5 +1,5 @@
-import Button from './button'
-import Input from './input'
+import Button from '@/components/ui/button'
+import Input from '@/components/ui/input'
 
 export default function AddressForm() {
   return (

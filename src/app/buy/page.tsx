@@ -1,6 +1,6 @@
-import CheckoutHeader from '@/components/checkoutHeader'
-import AddressForm from '@/components/addressForm'
-import OrderSummary from '@/components/orderSummary'
+import CheckoutHeader from '@/components/layout/checkoutHeader'
+import AddressForm from '@/components/shop/addressForm'
+import OrderSummary from '@/components/shop/orderSummary'
 
 export default function CheckoutPage() {
   return (
