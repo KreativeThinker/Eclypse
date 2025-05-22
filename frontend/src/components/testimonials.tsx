@@ -1,29 +1,37 @@
 'use client'
 
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
-const testimonials = [
+const testimonialsFallback = [
   {
     name: 'Random Woman',
     location: 'NY, USA',
     text: 'Understated, but unforgettable. It feels like it was made for me',
-    avatar: '/avatars/woman1.jpg',
+    avatar: '/media/avatars/woman1.jpg',
   },
   {
     name: 'Guy with Glasses',
     location: 'CA, USA',
     text: 'It changed how I feel about clothing.',
-    avatar: '/avatars/man1.jpg',
+    avatar: '/media/avatars/man1.jpg',
   },
   {
     name: 'Cool Woman',
     location: 'TX, USA',
     text: 'Minimal, stylish, perfect.',
-    avatar: '/avatars/woman2.jpg',
+    avatar: '/media/avatars/woman2.jpg',
   },
 ]
 
 export default function TestimonialSlider() {
+  const [testimonials, setTestimonials] = useState(testimonialsFallback)
+  useEffect(() => {
+    fetch(`http://localhost:4000/api/testimonials`)
+      .then((res) => res.json())
+      .then(setTestimonials)
+      .catch(() => {})
+  }, [])
   const active = 0
 
   return (
