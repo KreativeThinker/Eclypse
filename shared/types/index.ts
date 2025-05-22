@@ -19,4 +19,11 @@ type Product = {
   description: string;
 };
 
-export type { Testimonial, Product };
+type SelectedProduct = {
+  id: string;
+  name: string;
+  price: number;
+  size: string;
+};
+
+export type { Testimonial, Product, SelectedProduct };

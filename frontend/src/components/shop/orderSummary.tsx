@@ -1,6 +1,12 @@
+'use client'
 import Button from '@/components/ui/button'
+import { SelectedProduct } from '@shared/types'
 
-export default function OrderSummary() {
+type OrderSummaryProps = {
+  product: SelectedProduct | null
+}
+
+export default function OrderSummary({ product }: OrderSummaryProps) {
   return (
     <div className="bg-background-2 mt-4 flex flex-1 flex-col space-y-4 rounded-md p-4 md:mt-0 md:h-full md:justify-between">
       <p className="text-neutral-1 text-sm">
@@ -15,8 +21,8 @@ export default function OrderSummary() {
         <h2 className="text-lg font-semibold">Order Summary</h2>
         <div className="text-neutral-1 mt-6 space-y-4 text-sm">
           <div className="flex justify-between">
-            <p>Items – Silhouette No. 1 – Vermilion</p>
-            <p>7,999</p>
+            <p>{product?.name}</p>
+            <p>{product?.price}</p>
           </div>
           <div className="flex justify-between">
             <p>Shipping and handling:</p>

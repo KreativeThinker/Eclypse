@@ -14,7 +14,11 @@ export default function Navbar() {
         <a href="/about">About Us</a>
         <a href="/services">Waitlist</a>
         <a href="/contact">Cart</a>
-        <Button>Buy</Button>
+        <Button
+          onClick={() => document.getElementById('buy')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          Buy
+        </Button>
       </div>
     </nav>
   )

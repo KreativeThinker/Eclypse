@@ -5,7 +5,7 @@ const productRouter = Router();
 
 const product: Product = {
   id: "S1",
-  name: "Silhouette No. 1",
+  name: "Silhouette No. 1 - Vermillion",
   price: 7999,
   sizes: ["XS", "S", "M", "L", "XL"],
   media: {

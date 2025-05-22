@@ -105,7 +105,6 @@ export default function Home() {
         </section>
 
         {/* Product Shop */}
-        <h2 className="my-8 text-3xl md:my-24 md:text-5xl">Silhouette No. 1 – Vermilion</h2>
         <ProductCard />
 
         {/* Product Info */}
