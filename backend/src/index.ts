@@ -17,7 +17,7 @@ app.use(express.json());
 
 apiRouter.use("/product", productRouter);
 apiRouter.use("/testimonials", testimonialRouter);
-apiRouter.use("/checkout", checkoutRouter);
+apiRouter.use("/buy", checkoutRouter);
 
 app.use("/api", apiRouter);
 
