@@ -1,5 +1,6 @@
 'use client'
 
+import BASE_URL from '@/utils/api'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -27,7 +28,7 @@ const testimonialsFallback = [
 export default function TestimonialSlider() {
   const [testimonials, setTestimonials] = useState(testimonialsFallback)
   useEffect(() => {
-    fetch(`http://localhost:4000/api/testimonials`)
+    fetch(`${BASE_URL}/testimonials`)
       .then((res) => res.json())
       .then(setTestimonials)
       .catch(() => {})
