@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+type SizeSelectorProps = {
+  sizes: string[] | null
+  selectedSize: string | null
+  setSelectedSize: (size: string | null) => void
+}
 
-const sizes = ['XS', 'S', 'M', 'L', 'XL']
-
-export default function SizeSelector() {
-  const [selectedSize, setSelectedSize] = useState<string | null>(null)
-
+export default function SizeSelector({ sizes, selectedSize, setSelectedSize }: SizeSelectorProps) {
   return (
     <div className="flex flex-col gap-4 rounded-md">
       <div className="flex items-center justify-between text-sm font-medium text-neutral-500">
