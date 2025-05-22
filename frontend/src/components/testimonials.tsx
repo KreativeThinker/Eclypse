@@ -3,7 +3,7 @@
 import BASE_URL from '@/utils/api'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import type { Testimonial } from '../../../shared/types/index'
+import type { Testimonial } from '@shared/types/index'
 
 export default function TestimonialSlider() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([])
