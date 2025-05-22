@@ -15,6 +15,10 @@ export default function ProductCard() {
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
+  const handleSizeSelect = (size: string | null) => {
+    setSelectedSize(size)
+  }
+
   const handleBuy = () => {
     const data: SelectedProduct = {
       id: product?.id || '',
@@ -87,7 +91,7 @@ export default function ProductCard() {
           <SizeSelector
             sizes={product.sizes}
             selectedSize={selectedSize}
-            setSelectedSize={setSelectedSize}
+            onSizeSelect={handleSizeSelect}
           />
           <div className="flex flex-col gap-4">
             <Button variant="filled" theme="dark" className="md:p-4" onClick={handleBuy}>

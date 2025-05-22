@@ -5,7 +5,7 @@ type FAQProps = {
   answer?: string
 }
 
-export default function FAQ({ question, answer }: FAQProps) {
+export default function FAQ({ question }: FAQProps) {
   return (
     <div className="border-neutral-4 flex flex-row items-center justify-between border-b py-4 md:py-8">
       <h3 className="text-lg font-semibold md:text-3xl">{question}</h3>
